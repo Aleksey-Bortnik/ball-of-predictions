@@ -1,0 +1,63 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ball-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(50, 50, 50, 0.95);
+}
+
+.ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    animation: move 2s linear infinite;
+    background: -webkit-radial-gradient(100px 100px, circle, #4c4c4c, #000);
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+    font-size: 30px;
+    color: white;
+    text-shadow: #010000 10px 10px 29px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 2px rgba(245, 131, 44, 0.868);
+    }
+
+    25% {
+        box-shadow: 0px 0px 10px rgba(245, 131, 44, 0.868);
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px rgba(245, 131, 44, 0.868);
+    }
+
+    75% {
+        box-shadow: 0px 0px 20px rgba(245, 131, 44, 0.868);
+    }
+
+    100% {
+        box-shadow: 0px 0px 21px rgba(245, 131, 44, 0.868);
+    }
+}
+
+.effect {
+    box-shadow: 0px 0px 21px rgba(245, 131, 44, 0.868);
+    animation: shadow 2s ease-in-out infinite;
+}
